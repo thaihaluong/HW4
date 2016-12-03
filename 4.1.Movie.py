@@ -1,3 +1,4 @@
+#1
 def display_movie(m):
     print("Original name:",m["org_name"])
     print("Translated name:",m["trans_name"])
@@ -10,9 +11,9 @@ def create_movie(org_name,trans_name,year):
         "year": year
         }
 movie0=create_movie("The hunger game", "Dau truong sinh tu", 2016)
-##display_movie(movie0)
+display_movie(movie0)
 
-
+#2
 def display_movie_list(m_list):
     n=0    
     for i in m_list:
@@ -27,9 +28,9 @@ movie_list=[]
 movie1=create_movie("Little Door Gods", "Tieu Mon Than", 2015)
 movie_list.append(movie0)
 movie_list.append(movie1)
-
 display_movie_list(movie_list)
 
+#3
 def remove_movie(m_list,movie):
     if movie == m_list[0]:
         m_list=m_list[1]
@@ -41,6 +42,7 @@ movie_list = remove_movie(movie_list,movie0)
 
 display_movie_list(movie_list)
 
+#4
 def search_movie_by_year(m_list,year):
     new_list = []
     for i in m_list:
